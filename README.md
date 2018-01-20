@@ -18,7 +18,7 @@ rg: binary number, 1 rewrite graph by deleting anomalies, 0 not;
 ## network file
 first line: n m (#nodes & #edges)
 
-following m lines: s t (end points of an edge)
+following m lines: s t (end points of an edge) (The indices of nodes start with 0. Only one edge of each node pair needs to be included in the edge list.)
 
 ## ground-truth of anomalies
 If networks have ground-truth of anomalies, the filename of the ground-truth should by [filename]-anomaly.txt
@@ -54,9 +54,15 @@ For Linux OS users, please follow the guides in the homepage of METIS.
 
 http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
 
-## baselines (to appear)
+## baselines 
 1. ABC: Adaptive Betweenness Centrality 
 
 Reference: Yuichi Yoshada. Almost Linear-Time Algorithms for Adaptive Betweenness Centrality using Hupergraph Sketches. In KDD, 2014.
 
 2. OddBall
+
+Reference: Leman Akoglu, Mary McGlohon, Christos Faloutsos. oddball: Spotting Anomalies in Weighted Graphs. In PAKDD, 2010.
+
+3. MDS
+
+Reference: V. de Silva and J. B. Tenenbaum. Global versus local methods in nonlinear dimensionality reduction. In NIPS, 2002.
