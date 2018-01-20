@@ -42,7 +42,7 @@ if 0 is detected as an anomaly, the rg network should only have 1 edge: <0,1>, w
 ## external library
 We use the METIS library for graph partitioning.
 
-The deployment of METIS for MS Visual Studio is as follows: 
+The deployment of METIS for MS Visual Studio in x64 platform is as follows: 
 
 1. Open project Property Page;
 
