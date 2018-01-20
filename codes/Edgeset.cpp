@@ -151,8 +151,8 @@ void Edgeset::randomNonedgeSet(const Edgeset & edges, int ** comm) {
 		//int k = (rand() << 16 | rand()) % cmtyCount;
 		//int s = (rand() << 16 | rand()) % comm[k][0]; s = comm[k][s + 1];
 		//int t = (rand() << 16 | rand()) % comm[k][0]; t = comm[k][t + 1];
-		int s = (rand() << 16 | rand()) % nodeCount;
-		int t = (rand() << 16 | rand()) % nodeCount;
+		int s = ((rand() << 16 | rand()) % nodeCount + nodeCount) % nodeCount;
+		int t = ((rand() << 16 | rand()) % nodeCount + nodeCount) % nodeCount;
 		if (s == t) {
 			continue;
 		}
