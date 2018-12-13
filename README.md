@@ -42,7 +42,7 @@ if 0 is detected as an anomaly, the rg network should only have 1 edge: <0,1>, w
 ## external library
 We use the METIS library for graph partitioning.
 
-The deployment of METIS for MS Visual Studio in x64 platform is as follows: 
+The deployment of METIS for MS Visual Studio in x64 platform under Release mode is as follows: 
 
 1. Open project Property Page;
 
@@ -50,8 +50,10 @@ The deployment of METIS for MS Visual Studio in x64 platform is as follows:
 
 3. Configuration Properties -> Linker -> Input, add metis.lib into "Additional Dependencies" 
 
-For Linux OS users, please follow the guides in the homepage of METIS.
+if MSVS reports the unresolved external symbol error, please refer to the following page for help.
+https://stackoverflow.com/questions/30412951/unresolved-external-symbol-imp-fprintf-and-imp-iob-func-sdl2/36504365#36504365
 
+For Linux OS users, please follow the guides in the homepage of METIS.
 http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
 
 ## baselines 
